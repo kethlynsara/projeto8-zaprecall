@@ -11,12 +11,12 @@ export default function Tela1() {
                     <h1>ZapRecall</h1>
                     <buttom onClick={() => setVisivel(false)}>Iniciar Recall!</buttom>
                 </div>
-                
+
             </>
         );
     } else {
         return <>
-        <DeckFlashCards />
+            <DeckFlashCards />
         </>
     }
 }

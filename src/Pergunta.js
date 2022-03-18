@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Pergunta(props) {
+    //const [question, answer, num] = props;
     const [etapa, setEtapa] = React.useState("hidden");
 
     if (etapa === "hidden") {
@@ -14,9 +15,9 @@ export default function Pergunta(props) {
     
     if (etapa === "pergunta") {
         return (
-            <div className="questao" onClick={() => setEtapa("resposta")}>
-                <p>question?</p>
-                <img src="./css/assets/img/arrow.png" />
+            <div className="questao">
+                <p>{props.question}</p>
+                <img src="./css/assets/img/arrow.png" alt="arrow" onClick={() => setEtapa("resposta")}/>
             </div>
         )
     }
@@ -24,7 +25,7 @@ export default function Pergunta(props) {
     if (etapa === "resposta") {
         return (
             <div className="resposta">
-                <p>the answer is this</p>
+                <p>{props.answer}</p>
                 <div className="zapMemory">
                     <buttom className="nao-lembrei">Não lembrei</buttom>
                     <buttom className="quase-lembrei">Quase não lembrei</buttom>
