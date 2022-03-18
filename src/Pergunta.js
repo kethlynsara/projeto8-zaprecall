@@ -12,14 +12,23 @@ export default function Pergunta(props) {
             </div>
         );
     }
-    
+
     if (etapa === "pergunta") {
         return (
             <div className="questao">
                 <p>{props.question}</p>
-                <img src="./css/assets/img/arrow.png" alt="arrow" onClick={() => setEtapa("resposta")}/>
+                <img src="./css/assets/img/arrow.png" alt="arrow" onClick={() => setEtapa("resposta")} />
             </div>
         )
+    }
+
+    if (etapa === "zapResposta") {
+        return (
+            <div className="pergunta zap-resposta" onClick={() => setEtapa("pergunta")}>
+                <p>Pergunta {props.num}</p>
+                <img src="./css/assets/img/x.png" alt="arrow" />
+            </div>
+        );
     }
 
     if (etapa === "resposta") {
@@ -27,11 +36,15 @@ export default function Pergunta(props) {
             <div className="resposta">
                 <p>{props.answer}</p>
                 <div className="zapMemory">
-                    <buttom onClick={() => props.callback(1)} className="nao-lembrei">Não lembrei</buttom>
+                    <buttom onClick={() => {
+                        props.callback(1)
+                        setEtapa("zapResposta")
+                    }}
+                        className="nao-lembrei">Não lembrei</buttom>
                     <buttom onClick={() => props.callback(1)} className="quase-lembrei">Quase não lembrei</buttom>
                     <buttom onClick={() => props.callback(1)} className="zap">Zap</buttom>
                 </div>
             </div>
-        ); 
+        );
     }
 }

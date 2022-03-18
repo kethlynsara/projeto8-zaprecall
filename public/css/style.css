@@ -205,6 +205,28 @@ main {
     text-align: center;
 }
 
+.zap-resposta {
+    text-decoration: line-through;
+    width: 182px;
+    height: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 12px 13px 6px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.zap-resposta p {
+    color: #FF3030;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Recursive', sans-serif;
+}
+
 ion-icon {
     width: 13px;
     height: 15px;
