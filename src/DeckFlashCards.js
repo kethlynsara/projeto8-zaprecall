@@ -1,8 +1,8 @@
 import Pergunta from "./Pergunta";
 import Header from "./Header";
 import Footer from "./Footer";
+import React from "react";
 
-//const questoes = [1, 2, 3, 4, 5, 6, 7, 8];
 const flashcards = [
     {
         question: "Quais os países que têm a maior e a menor expectativa de vida do mundo?",
@@ -44,14 +44,16 @@ export default function DeckFlashCards() {
     function comparador() { 
         return Math.random() - 0.5; 
     }
-    
+
+    const [totalConcluidos, setTotalConcluidos] = React.useState(0);
+
     return (
         <>
             <Header />
             <main>
-                {flashcards.map((flashcard, index) => <Pergunta num={index === 0 ? 1 : index + 1 } question={flashcard.question} answer={flashcard.answer} key={flashcard.question}/>)}
+                {flashcards.map((flashcard, index) => <Pergunta num={index + 1 } question={flashcard.question} answer={flashcard.answer} key={flashcard.question} callback={(finished) => setTotalConcluidos(totalConcluidos + finished)}/>)}
             </main>
-            <Footer />
+            <Footer  concluidos={totalConcluidos}/>
         </>
     );
 }

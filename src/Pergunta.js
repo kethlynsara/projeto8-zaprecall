@@ -27,9 +27,9 @@ export default function Pergunta(props) {
             <div className="resposta">
                 <p>{props.answer}</p>
                 <div className="zapMemory">
-                    <buttom className="nao-lembrei">Não lembrei</buttom>
-                    <buttom className="quase-lembrei">Quase não lembrei</buttom>
-                    <buttom className="zap">Zap</buttom>
+                    <buttom onClick={() => props.callback(1)} className="nao-lembrei">Não lembrei</buttom>
+                    <buttom onClick={() => props.callback(1)} className="quase-lembrei">Quase não lembrei</buttom>
+                    <buttom onClick={() => props.callback(1)} className="zap">Zap</buttom>
                 </div>
             </div>
         ); 
