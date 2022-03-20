@@ -51,7 +51,7 @@ export default function DeckFlashCards() {
         <>
             <Header />
             <main>
-                {flashcards.map((flashcard, index) => <Pergunta num={index + 1 } question={flashcard.question} answer={flashcard.answer} key={flashcard.question} callback={(finished) => setTotalConcluidos(totalConcluidos + finished)}/>)}
+                {flashcards.map((flashcard, index) => <Pergunta num={index + 1} question={flashcard.question} answer={flashcard.answer} key={flashcard.question} callback={(finished) => setTotalConcluidos(totalConcluidos + finished)}/>)}
             </main>
             <Footer  concluidos={totalConcluidos}/>
         </>
