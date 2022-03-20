@@ -1,7 +1,7 @@
-export default function Footer(props) {
+export default function Footer({concluidos}) {
     return (
         <footer>
-            <p>{props.concluidos}/8 CONCLUÍDOS</p>
+            <p>{concluidos}/8 CONCLUÍDOS</p>
         </footer>
        
     )

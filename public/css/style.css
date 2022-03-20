@@ -17,6 +17,13 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 8;
+    background-color: #FB6B6B;
 }
 
 .tela1 img {
@@ -205,8 +212,7 @@ main {
     text-align: center;
 }
 
-.zap-resposta {
-    text-decoration: line-through;
+.resposta-concluida {
     width: 182px;
     height: 40px;
     background-color: #FFFFFF;
@@ -219,13 +225,29 @@ main {
     margin-top: 5px;
 }
 
-.zap-resposta p {
-    color: #FF3030;
+.resposta-concluida p {
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     font-family: 'Recursive', sans-serif;
 }
+
+.resposta-concluida.red p  {
+    color: #FF3030;
+    text-decoration: line-through #FF3030;
+}
+
+.resposta-concluida.orange p{
+    color: #FF922E;
+    text-decoration: line-through #FF922E;
+}
+
+.resposta-concluida.green p{
+    color: #2FBE34;
+    text-decoration: line-through #2FBE34;
+}
+
+
 
 ion-icon {
     width: 13px;

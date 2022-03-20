@@ -1,5 +1,4 @@
 import React from "react";
-import DeckFlashCards from "./DeckFlashCards";
 
 export default function Tela1() {
     const [visivel, setVisivel] = React.useState(true);
@@ -15,8 +14,6 @@ export default function Tela1() {
             </>
         );
     } else {
-        return <>
-            <DeckFlashCards />
-        </>
+        return <> </>
     }
 }
