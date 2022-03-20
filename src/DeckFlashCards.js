@@ -38,13 +38,13 @@ const flashcards = [
     }
 ]
 
+flashcards.sort(comparador);
+
+function comparador() { 
+    return Math.random() - 0.5; 
+}
+
 export default function DeckFlashCards() {
-    flashcards.sort(comparador);
-
-    function comparador() { 
-        return Math.random() - 0.5; 
-    }
-
     const [totalConcluidos, setTotalConcluidos] = React.useState(0);
 
     return (
