@@ -6,7 +6,7 @@ export default function Tela1() {
         return (
             <>
                 <div className="tela1">
-                    <img src="./css/assets/img/logo.png" alt="logo" />
+                    <img src="./assets/img/logo.png" alt="logo" />
                     <h1>ZapRecall</h1>
                     <buttom onClick={() => setVisivel(false)}>Iniciar Recall!</buttom>
                 </div>

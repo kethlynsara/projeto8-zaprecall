@@ -3,12 +3,12 @@ let cont = 0;
 
 export default function Footer({ concluidos, icone }) {
     if (icone === "nao-lembrei") {
-        nomeIcone.push(<img src="./css/assets/img/x.png" alt="nao-lembrei" />);
+        nomeIcone.push(<img src="./assets/img/x.png" alt="nao-lembrei" />);
         cont++;
     } else if (icone === "quase-nao-lembrei") {
-        nomeIcone.push(<img src="./css/assets/img/orange.png" alt="quase-nao-lembrei" />)
+        nomeIcone.push(<img src="./assets/img/orange.png" alt="quase-nao-lembrei" />)
     } else if (icone === "zap") {
-        nomeIcone.push(<img src="./css/assets/img/check.png" alt="zap" />)
+        nomeIcone.push(<img src="./assets/img/check.png" alt="zap" />)
     }
 
     if (concluidos === 8 && cont !== 0) {
@@ -16,7 +16,7 @@ export default function Footer({ concluidos, icone }) {
             <footer>
                 <div className="msg-final">
                     <div className="parabens">
-                        <img src="./css/assets/img/sad.png" alt="putz" />
+                        <img src="./assets/img/sad.png" alt="putz" />
                         <p>PUTZ!</p>
                     </div>
                     <p className="msg-putz">{`Ainda faltaram alguns... 
@@ -33,7 +33,7 @@ export default function Footer({ concluidos, icone }) {
             <footer>
                 <div className="msg-final">
                     <div className="parabens">
-                        <img src="./css/assets/img/party.png" alt="parabens" />
+                        <img src="./assets/img/party.png" alt="parabens" />
                         <p>PARABÉNS!</p>
                     </div>
                     <p className="msg-parabens">Você não esqueceu de nenhum flashcard!</p>

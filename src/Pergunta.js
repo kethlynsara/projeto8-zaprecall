@@ -16,7 +16,7 @@ export default function Pergunta({num, question, answer, concluidos, callback, s
         return (
             <div className="questao">
                 <p>{question}</p>
-                <img src="./css/assets/img/arrow.png" alt="arrow" onClick={() => setEtapa("resposta")} />
+                <img src="./assets/img/arrow.png" alt="arrow" onClick={() => setEtapa("resposta")} />
             </div>
         )
     }
@@ -25,7 +25,7 @@ export default function Pergunta({num, question, answer, concluidos, callback, s
         return (
             <div className="resposta-concluida red">
                 <p>Pergunta {num}</p>
-                <img src="./css/assets/img/x.png" alt="nao-lembrei" />
+                <img src="./assets/img/x.png" alt="nao-lembrei" />
             </div>
         );
     }
@@ -35,7 +35,7 @@ export default function Pergunta({num, question, answer, concluidos, callback, s
         return (
             <div className="resposta-concluida orange">
                 <p>Pergunta {num}</p>
-                <img src="./css/assets/img/orange.png" alt="quase-nao-lembrei" />
+                <img src="./assets/img/orange.png" alt="quase-nao-lembrei" />
             </div>
         );
     }
@@ -45,7 +45,7 @@ export default function Pergunta({num, question, answer, concluidos, callback, s
         return (
             <div className="resposta-concluida green">
                 <p>Pergunta {num}</p>
-                <img src="./css/assets/img/check.png" alt="zap" />
+                <img src="./assets/img/check.png" alt="zap" />
             </div>
         );
     }
