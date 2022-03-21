@@ -307,7 +307,8 @@ footer .msg-final .parabens {
 
 footer .msg-final .parabens p {
     margin-left: 5px;
-    margin-top: -4px;
+    margin-top: -3px;
+    font-weight: bold;
 }
 
 footer .msg-final .msg-parabens {
@@ -316,3 +317,12 @@ footer .msg-final .msg-parabens {
     margin-top: 14px;
     margin-bottom: 12px;
 }
+
+
+footer .msg-final .msg-putz {
+    width: 150px;
+    height: 28px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+

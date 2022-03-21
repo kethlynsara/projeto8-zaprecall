@@ -19,7 +19,8 @@ export default function Footer({ concluidos, icone }) {
                         <img src="./css/assets/img/sad.png" alt="putz" />
                         <p>PUTZ!</p>
                     </div>
-                    <p className="msg-parabens">Ainda faltaram alguns... Mas não desanime!</p>
+                    <p className="msg-putz">{`Ainda faltaram alguns... 
+                                            Mas não desanime!`}</p>
                 </div>
                 <div className="icones-selecionados">{nomeIcone.map((nome) => nome)}</div>
             </footer>
