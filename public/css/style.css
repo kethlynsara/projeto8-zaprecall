@@ -27,20 +27,21 @@ h1 {
 }
 
 .tela1 img {
-    margin-top: 90px;
+    margin-top: 100px;
     margin-bottom: 5px;
-    width: 55px;
-    height: 65px;
+    width: 136px;
+    height: 161px;
 }
 
 .tela1 h1 {
-    font-size: 25px;
-    line-height: 31.04px;
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 20px;
 }
 
 .tela1 buttom {
-    width: 141px;
-    height: 31px;
+    width: 246px;
+    height: 54px;
     font-family: 'Recursive', sans-serif;
     color: #D70900;
     font-weight: 400;
@@ -51,8 +52,8 @@ h1 {
     border: 1px solid #D70900;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    padding: 9px 13px 9px 12px;
-    margin-top: 73px;
+    padding: 16px 22px 16px 22px;
+    margin-top: 40px;
     margin-bottom: 87px;
 }
 
@@ -69,16 +70,17 @@ header {
 }
 
 header img {
-    width: 26px;
-    height: 30px;
-    margin-top: 22px;
+    width: 52px;
+    height: 60px;
+    margin-top: 42px;
+    margin-right: 15px;
 }
 
 header h1 {
-    margin-top: 22px;
+    margin-top: 40px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 45px;
     letter-spacing: -0.012em;
     margin-left: 5px;
 }
@@ -88,65 +90,80 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 86px;
+    margin-top: 153px;
+    margin-bottom: 244px;
+    overflow-y: hidden;
 }
 
 .pergunta {
-    width: 182px;
-    height: 40px;
+    width: 300px;
+    height: 65px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    padding: 13px 12px 13px 6px;
-    margin-bottom: 5px;
+    padding: 23px 22px 23px 15px;
+    margin-bottom: 25px;
     margin-top: 5px;
 }
 
 .pergunta p {
     color: #333333;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 19px;
     font-family: 'Recursive', sans-serif;
 }
 
+ion-icon {
+    width: 20px;
+    height: 23px;
+    color: #333333;
+    font-weight: bold;
+}
+
 .questao {
-    width: 182px;
-    height: 80px;
+    width: 299px;
+    height: 131px;
     background-color: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    padding-top: 13px;
+    padding-top: 18px;
     padding-bottom: 7px;
-    padding-left: 6px;
-    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+    position: relative;
 }
 
 .questao p {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
     color: #333333;
 }
 
 .questao img {
-    width: 20px;
-    height: 13px;
+    width: 30px;
+    height: 20px;
     color: #333333;
     margin-top: 10px;
     margin-left: 150px;
+    position: absolute;
+    top: 95px;
+    right: 15px;
+    bottom: 6px;
 }
 
 .resposta {
     font-family: 'Recursive';
-    width: 182px;
-    height: 80px;
+    width: 299px;
+    height: 131px;
     background-color: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -154,106 +171,98 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 5px;
-    margin-bottom: 5px;
-    padding-top: 13px; 
-    padding-bottom: 3px;
+    margin-bottom: 25px;
+    padding: 18px 15px 6px 15px;
+    position: relative;
 }
 
 .resposta p {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
     color: #333333;
-    margin-left: 6px;
+
 }
 
 .resposta .zapMemory {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 7px;
-    line-height: 8px;
+    font-size: 12px;
+    line-height: 14px;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    margin-left: 3px;
-    margin-right: 3px;
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    bottom: 6px;
 }
 
 .resposta .zapMemory .nao-lembrei {
-    width: 55px;
-    height: 24px;
+    width: 85.17px;
+    height: 37.17px;
     background: #FF3030;
     border-radius: 5px;
-    padding-top: 7px;
+    padding-top: 14px;
     text-align: center;
 }
 
 .resposta .zapMemory .quase-lembrei {
-    width: 55px;
-    height: 24px;
+    width: 85.17px;
+    height: 37.17px;
     background-color: #FF922E;
-    border-radius: 5px;
-    padding-top: 5px;
-    text-align: center;
-}
-
-.resposta .zapMemory .zap {
-    width: 55px;
-    height: 24px;
-    background-color: #2FBE34;
     border-radius: 5px;
     padding-top: 7px;
     text-align: center;
 }
 
+.resposta .zapMemory .zap {
+    width: 85.17px;
+    height: 37.17px;
+    background-color: #2FBE34;
+    border-radius: 5px;
+    padding-top: 14px;
+    text-align: center;
+}
+
 .resposta-concluida {
-    width: 182px;
-    height: 40px;
+    width: 300px;
+    height: 65px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    padding: 13px 12px 13px 6px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    padding: 23px 15px 23px 15px;
+    margin-bottom: 25px;
 }
 
 .resposta-concluida p {
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 19px;
     font-family: 'Recursive', sans-serif;
 }
 
-.resposta-concluida.red p  {
+.resposta-concluida.red p {
     color: #FF3030;
     text-decoration: line-through #FF3030;
 }
 
-.resposta-concluida.orange p{
+.resposta-concluida.orange p {
     color: #FF922E;
     text-decoration: line-through #FF922E;
 }
 
-.resposta-concluida.green p{
+.resposta-concluida.green p {
     color: #2FBE34;
     text-decoration: line-through #2FBE34;
-}
-
-
-
-ion-icon {
-    width: 13px;
-    height: 15px;
-    color: #333333;
-
 }
 
 footer {
@@ -272,27 +281,27 @@ footer p {
     font-family: 'Recursive', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
-    margin-top: 18px;
+    margin-top: 9px;
 }
 
 footer img {
-    width: 14px;
-    height: 14px;
+    width: 23px;
+    height: 23px;
 }
 
 footer .icones-selecionados {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3px;
-    margin-bottom: 14px;
+    margin-top: 6px;
+    margin-bottom: 10px;
 }
 
 footer .icones-selecionados img {
-    margin-left: 3px;
+    margin-left: 5px;
 }
 
 footer .msg-final {
@@ -309,20 +318,158 @@ footer .msg-final .parabens p {
     margin-left: 5px;
     margin-top: -3px;
     font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 footer .msg-final .msg-parabens {
-    width: 131px;
-    height: 28px;
+    width: 222px;
+    height: 44px;
     margin-top: 14px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 
 footer .msg-final .msg-putz {
-    width: 150px;
-    height: 28px;
+    width: 222px;
+    height: 44px;
     margin-top: 14px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
+@media (min-width: 935px) {
+    header img {
+        width: 86.96px;
+        height: 100px;
+        margin-top: 82px;
+        margin-right: 15px;
+    }
+
+    header h1 {
+        font-size: 64px;
+        list-style: 79px;
+        margin-top: 100.57;
+    }
+
+    main {
+        margin-top: 292px;
+    }
+
+    .pergunta {
+        width: 567.12px;
+        height: 91.74px;
+    }
+
+    .pergunta p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    ion-icon {
+        width: 31.69px;
+        height: 36.7px;
+    }
+
+    .questao {
+        width: 567.12px;
+        height: 268.12px;
+    }
+
+    .questao p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .questao img {
+        top: 220px;
+    }
+
+    .resposta {
+        width: 567.12px;
+        height: 268.12px;
+    }
+
+    .resposta p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .resposta-concluida {
+        width: 567.12px;
+        height: 91.74px;
+    }
+
+    .resposta-concluida p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .resposta .zapMemory {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .resposta .zapMemory .nao-lembrei {
+        width: 160px;
+        height: 80px;
+        padding-top: 30px;
+    }
+
+    .resposta .zapMemory .quase-lembrei {
+        width: 160px;
+        height: 80px;
+        padding-top: 20px;
+    }
+
+    .resposta .zapMemory .zap {
+        width: 160px;
+        height: 80px;
+        padding-top: 30px;
+    }
+
+    .resposta-concluida p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .resposta-concluida img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    footer p {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    footer .icones-selecionados img{
+        width: 28px;
+        height: 28px;
+        margin-left: 7px;
+    }
+
+    footer .msg-final .parabens p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    footer .msg-final .msg-putz {
+        width: 422px;
+        margin-bottom: 10px;
+    }
+
+    footer .msg-final .msg-parabens {
+        width: 422px;
+        margin-bottom: 10px;
+    }
+
+    footer .concluidos {
+        margin-top: 50px;
+    }
+}

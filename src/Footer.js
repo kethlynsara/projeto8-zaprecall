@@ -23,6 +23,7 @@ export default function Footer({ concluidos, icone }) {
                                             Mas não desanime!`}</p>
 
                 </div>
+                <p className="concluidos">{concluidos}/8 CONCLUÍDOS</p>
                 <div className="icones-selecionados">{nomeIcone.map((nome) => nome)}</div>
             </footer>
 
@@ -37,6 +38,7 @@ export default function Footer({ concluidos, icone }) {
                     </div>
                     <p className="msg-parabens">Você não esqueceu de nenhum flashcard!</p>
                 </div>
+                <p className="concluidos">{concluidos}/8 CONCLUÍDOS</p>
                 <div className="icones-selecionados">{nomeIcone.map((nome) => nome)}</div>
             </footer>
 
@@ -44,7 +46,7 @@ export default function Footer({ concluidos, icone }) {
     } else {
         return (
             <footer>
-                <p>{concluidos}/8 CONCLUÍDOS</p>
+                <p className="concluidos">{concluidos}/8 CONCLUÍDOS</p>
                 <div className="icones-selecionados">{nomeIcone}</div>
             </footer>
         )
