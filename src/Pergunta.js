@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Pergunta({num, question, answer, concluidos, callback}) {
+export default function Pergunta({num, question, answer, concluidos, callback, setIcone}) {
     const [etapa, setEtapa] = React.useState("hidden");
 
     if (etapa === "hidden") {
@@ -59,14 +59,17 @@ export default function Pergunta({num, question, answer, concluidos, callback}) 
                     <buttom onClick={() => {
                         setEtapa("nao-lembrei");
                         callback(concluidos + 1);
+                        setIcone("nao-lembrei");
                         }} className="nao-lembrei">Não lembrei</buttom>
                     <buttom onClick={() => {
                         setEtapa("quase-nao-lembrei");
                         callback(concluidos + 1);
+                        setIcone("quase-nao-lembrei");
                         }} className="quase-lembrei">Quase não lembrei</buttom>
                     <buttom onClick={() => {
                         setEtapa("zap")
                         callback(concluidos + 1);
+                        setIcone("zap");
                         }} className="zap">Zap</buttom>
                 </div>
             </div>

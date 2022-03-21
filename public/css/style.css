@@ -260,9 +260,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
@@ -273,4 +276,43 @@ footer p {
     line-height: 14px;
     text-align: center;
     margin-top: 18px;
+}
+
+footer img {
+    width: 14px;
+    height: 14px;
+}
+
+footer .icones-selecionados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 14px;
+}
+
+footer .icones-selecionados img {
+    margin-left: 3px;
+}
+
+footer .msg-final {
+    margin-top: 16px;
+}
+
+footer .msg-final .parabens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .msg-final .parabens p {
+    margin-left: 5px;
+    margin-top: -4px;
+}
+
+footer .msg-final .msg-parabens {
+    width: 131px;
+    height: 28px;
+    margin-top: 14px;
+    margin-bottom: 12px;
 }

@@ -1,7 +1,7 @@
 import Pergunta from "./Pergunta";
 import Header from "./Header";
 import Footer from "./Footer";
-import React from "react";
+import {useState} from "react";
 
 const flashcards = [
     {
@@ -45,15 +45,22 @@ function comparador() {
 }
 
 export default function DeckFlashCards() {
-    const [totalConcluidos, setTotalConcluidos] = React.useState(0);
-
+    const [totalConcluidos, setTotalConcluidos] = useState(0);
+    const [icone, setIcone] = useState("");
     return (
         <>
             <Header />
             <main>
-                {flashcards.map((flashcard, index) => <Pergunta num={index + 1} question={flashcard.question} answer={flashcard.answer} key={flashcard.question} concluidos={totalConcluidos} callback={setTotalConcluidos}/>)}
+                {flashcards.map((flashcard, index) => <Pergunta num={index + 1} 
+                                                                question={flashcard.question} 
+                                                                answer={flashcard.answer} 
+                                                                key={flashcard.question} 
+                                                                concluidos={totalConcluidos} 
+                                                                callback={setTotalConcluidos}
+                                                                setIcone={setIcone}
+                                                                />)}
             </main>
-            <Footer concluidos={totalConcluidos}/>
+            <Footer concluidos={totalConcluidos} icone={icone}/>
         </>
     );
 }
