@@ -21,6 +21,7 @@ export default function Footer({ concluidos, icone }) {
                     </div>
                     <p className="msg-putz">{`Ainda faltaram alguns... 
                                             Mas não desanime!`}</p>
+
                 </div>
                 <div className="icones-selecionados">{nomeIcone.map((nome) => nome)}</div>
             </footer>
