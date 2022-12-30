@@ -44,9 +44,10 @@ function comparador() {
     return Math.random() - 0.5; 
 }
 
-export default function DeckFlashCards() {
+export default function Home({setVisivel}) {
     const [totalConcluidos, setTotalConcluidos] = useState(0);
     const [icone, setIcone] = useState("");
+    const [resetEtapa, setResetEtapa] = useState(false);
     return (
         <>
             <Header />
@@ -58,9 +59,11 @@ export default function DeckFlashCards() {
                                                                 concluidos={totalConcluidos} 
                                                                 callback={setTotalConcluidos}
                                                                 setIcone={setIcone}
+                                                                resetEtapa={resetEtapa}
+                                                                setResetEtapa={setResetEtapa}
                                                                 />)}
             </main>
-            <Footer concluidos={totalConcluidos} icone={icone}/>
+            <Footer concluidos={totalConcluidos} setConcluidos={setTotalConcluidos} icone={icone} setVisivel={setVisivel} setResetEtapa={setResetEtapa}/>
         </>
     );
 }

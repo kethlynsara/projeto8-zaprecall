@@ -1,8 +1,5 @@
-import React from "react";
-
-export default function Tela1() {
-    const [visivel, setVisivel] = React.useState(true);
-    if (visivel === true) {
+export default function InitialScreen({visivel, setVisivel}) {
+    if (visivel) {
         return (
             <>
                 <div className="tela1">
@@ -14,6 +11,6 @@ export default function Tela1() {
             </>
         );
     } else {
-        return <> </>
+        return <></>
     }
 }

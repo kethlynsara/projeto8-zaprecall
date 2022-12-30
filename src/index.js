@@ -1,17 +1,19 @@
 import ReactDOM from "react-dom";
-import React from "react";
-import Tela1 from "./Tela1";
-import DeckFlashCards from "./DeckFlashCards"; 
+import React, {useState} from "react";
+
+import Home from "./Home";
+import InitialScreen from "./InitialScreen";
+
 import "./styles/reset.css"
 import "./styles/style.css"
 
 function App() {
-
+    const [visivel, setVisivel] = useState(true);
     return (
-        <>
-            <Tela1 />
-            <DeckFlashCards />
-        </>
+            <>
+                <InitialScreen visivel={visivel} setVisivel={setVisivel}/>
+                <Home visivel={visivel} setVisivel={setVisivel}/>
+            </>
     );
 }
 

@@ -1,7 +1,7 @@
 let nomeIcone = [];
 let cont = 0;
 
-export default function Footer({ concluidos, icone }) {
+export default function Footer({ concluidos, setConcluidos, icone, setVisivel, setResetEtapa }) {    
     if (icone === "nao-lembrei") {
         nomeIcone.push(<img src="./assets/img/x.png" alt="nao-lembrei" />);
         cont++;
@@ -25,6 +25,15 @@ export default function Footer({ concluidos, icone }) {
                 </div>
                 <p className="concluidos">{concluidos}/8 CONCLUÍDOS</p>
                 <div className="icones-selecionados">{nomeIcone.map((nome) => nome)}</div>
+                <button onClick={() => {
+                    console.log(nomeIcone.length);
+                    nomeIcone.length = 0;
+                    console.log(nomeIcone, nomeIcone.length)
+                    cont = 0;
+                    setConcluidos(0);
+                    setResetEtapa(true);
+                    setVisivel(true);
+                }}>REINICIAR RECALL</button>
             </footer>
 
         )
@@ -40,6 +49,15 @@ export default function Footer({ concluidos, icone }) {
                 </div>
                 <p className="concluidos">{concluidos}/8 CONCLUÍDOS</p>
                 <div className="icones-selecionados">{nomeIcone.map((nome) => nome)}</div>
+                <button onClick={() => {
+                    console.log(nomeIcone.length);
+                    nomeIcone.length = 0;
+                    console.log(nomeIcone, nomeIcone.length)
+                    cont = 0;
+                    setConcluidos(0);
+                    setResetEtapa(true);
+                    setVisivel(true);                    
+                }}>REINICIAR RECALL</button>
             </footer>
 
         )

@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
-export default function Pergunta({num, question, answer, concluidos, callback, setIcone}) {
-    const [etapa, setEtapa] = React.useState("hidden");
+export default function Pergunta({num, question, answer, concluidos, callback, setIcone, resetEtapa, setResetEtapa}) {
+    const [ etapa, setEtapa] = useState("hidden");
 
+    useEffect(() => {
+        if (resetEtapa) {
+            setEtapa("hidden");
+            setResetEtapa(false);
+        }
+    }, [resetEtapa]);
+
+    setResetEtapa(false);
+    
     if (etapa === "hidden") {
         return (
             <div className="pergunta" onClick={() => setEtapa("pergunta")}>
